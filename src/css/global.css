@@ -1,0 +1,11 @@
+/* Reset mínimo */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+/* Variables */
+:root{
+  --clr-primary:#c62c2c;
+  --clr-bg:#fafafa;
+  --ff-base:system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+/* Base */
+body{font-family:var(--ff-base);background:var(--clr-bg);line-height:1.5;color:#222;}
+a{text-decoration:none;color:inherit}
