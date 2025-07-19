@@ -161,7 +161,6 @@ a{text-decoration:none;color:inherit}
 
 @media(min-width:768px){
   .portfolio-grid{grid-template-columns:repeat(3,1fr);gap:24px;padding:0 120px;}
-
 }
 
 /* —— Contact form —— */
@@ -184,5 +183,48 @@ a{text-decoration:none;color:inherit}
 
 .btn-cta{margin-top:8px}
 
+/* —— Portfolio page —— */
+.portfolio-page{padding:48px 16px;max-width:1200px;margin:auto}
+.portfolio-page h1{text-align:center;margin-bottom:32px}
+
+.filters{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px
 }
+.filter{
+  padding:.5rem 1rem;border:1px solid var(--clr-primary);
+  background:#fff;color:var(--clr-primary);border-radius:4px;cursor:pointer;
+  transition:.2s
+}
+.filter.active,
+.filter:hover{background:var(--clr-primary);color:#fff}
+
+.portfolio-grid-full{
+  max-width:1200px;              /* 3 tarjetas + gaps (ajusta al gusto) */
+  margin-inline:auto;
+  display:grid;
+  gap:24px;
+
+  /* ancho fijo por tarjeta */
+  grid-template-columns:repeat(auto-fill,minmax(260px,260px));
+  grid-auto-flow:row dense;
+
+  /* centra cuando hay 1 ó 2 pistas */
+  place-content:center;         /* Firefox/Chrome modernos */
+  /* fallback Safari: */
+  justify-content:center;
+}
+
+.card-obra{
+  background:#fff;border-radius:8px;overflow:hidden;
+  box-shadow:0 2px 4px #0001;
+  transition:transform .25s;
+}
+
+.card-obra.hide{
+  display:none;
+  /*opacity:0;transform:scale(.9);pointer-events:none;*/
+}
+.card-obra img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.card-obra h2{padding:12px;font-size:1rem}
+
 

@@ -5,3 +5,6 @@ initServicesCarousel()
 
 import { initContactForm } from './contact.js'
 initContactForm()
+
+import { initPortfolioFilters } from './portfolio.js'
+initPortfolioFilters()
