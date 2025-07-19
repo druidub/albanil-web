@@ -29,6 +29,37 @@
   <main id="content">
     <!-- Hero irá aquí -->
   </main>
+  <section class="contact-form">
+    <h1>Contacta con tu albañil de confianza</h1>
+  
+    <form id="form-contacto" novalidate>
+      <label>
+        Nombre completo
+        <input type="text" name="nombre" required minlength="3" />
+        <span class="error" data-error-nombre></span>
+      </label>
+  
+      <label>
+        Email
+        <input type="email" name="email" required />
+        <span class="error" data-error-email></span>
+      </label>
+  
+      <label>
+        Tu mensaje
+        <textarea name="mensaje" rows="5" required></textarea>
+        <span class="error" data-error-mensaje></span>
+      </label>
+  
+      <label class="chk">
+        <input type="checkbox" name="rgpd" required />
+        Acepto la <a href="/privacidad.html">política de privacidad</a>
+      </label>
+  
+      <button type="submit" class="btn-cta">Enviar</button>
+      <p class="form-ok" hidden>¡Mensaje enviado correctamente!</p>
+    </form>
+  </section>
   <!-- Footer -->
   <script type="module" src="js/main.js"></script>
 </body>

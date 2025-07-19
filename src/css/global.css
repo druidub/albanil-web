@@ -162,3 +162,23 @@ a{text-decoration:none;color:inherit}
 @media(min-width:768px){
   .portfolio-grid{grid-template-columns:repeat(3,1fr);gap:24px;padding:0 120px;}
 }
+
+/* —— Contact form —— */
+.contact-form{padding:48px 16px;max-width:600px;margin:auto}
+.contact-form h1{text-align:center;margin-bottom:32px}
+
+.contact-form label{display:block;margin-bottom:20px;font-weight:600}
+.contact-form input,
+.contact-form textarea{
+  width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;
+  font:inherit;margin-top:6px
+}
+.error{color:#c62c2c;font-size:.875rem}
+
+/* checkbox */
+.chk{display:flex;align-items:center;gap:8px;font-weight:400}
+.chk input{width:auto}
+
+.form-ok{color:green;margin-top:16px;font-weight:700}
+
+.btn-cta{margin-top:8px}
