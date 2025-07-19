@@ -107,6 +107,9 @@ a{text-decoration:none;color:inherit}
 
 
 /* ——— Servicios ——— */
+.visually-hidden {
+  text-align: center;
+}
 .services{padding:48px 0;background:#fff;}
 .services__track{
   display:flex;gap:16px;padding:0 16px;
@@ -132,3 +135,30 @@ a{text-decoration:none;color:inherit}
   }
 }
 
+/* ——— Mini-Portfolio ——— */
+.mini-portfolio{padding:48px 0;background:#fafafa;text-align:center;}
+.mini-portfolio h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:32px;}
+
+.portfolio-grid{
+  display:grid;gap:16px;
+  grid-template-columns:repeat(2,1fr);
+  padding:0 16px;margin-bottom:32px;
+}
+.card-obra{
+  background:#fff;border-radius:8px;overflow:hidden;
+  box-shadow:0 2px 4px #0001;transition:transform .2s;
+}
+.card-obra:hover{transform:translateY(-4px);}
+.card-obra img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.card-obra h3{padding:12px;font-size:1rem;}
+
+.btn-secondary{
+  display:inline-block;padding:.75rem 1.5rem;border:2px solid var(--clr-primary);
+  color:var(--clr-primary);border-radius:4px;font-weight:600;
+  transition:background .2s,color .2s;
+}
+.btn-secondary:hover{background:var(--clr-primary);color:#fff}
+
+@media(min-width:768px){
+  .portfolio-grid{grid-template-columns:repeat(3,1fr);gap:24px;padding:0 120px;}
+}
