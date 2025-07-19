@@ -104,3 +104,31 @@ a{text-decoration:none;color:inherit}
   transition:background .2s
 }
 .btn-cta:hover{background:#a02121}
+
+
+/* ——— Servicios ——— */
+.services{padding:48px 0;background:#fff;}
+.services__track{
+  display:flex;gap:16px;padding:0 16px;
+  overflow-x:auto;scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+}
+.service-card{
+  min-width:200px;scroll-snap-align:center;
+  background:#f4f4f4;border-radius:8px;padding:24px 16px;
+  text-align:center;flex-shrink:0;
+  transition:transform .2s;
+}
+.service-card:hover{transform:translateY(-4px);}
+.service-card__icon{fill:var(--clr-primary);margin-bottom:8px;}
+@media(min-width:768px){
+  .services__track{
+    overflow-x:visible;flex-wrap:wrap;
+    justify-content:center;padding:0;
+  }
+  .service-card{
+    flex:1 1 200px;max-width:260px;margin:16px;
+    background:#f8f8f8;
+  }
+}
+
