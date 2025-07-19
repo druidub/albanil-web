@@ -9,3 +9,69 @@
 /* Base */
 body{font-family:var(--ff-base);background:var(--clr-bg);line-height:1.5;color:#222;}
 a{text-decoration:none;color:inherit}
+
+/* ——— Header sticky ——— */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#fff;
+  box-shadow:0 2px 4px #0001;
+  transition:transform .3s;
+}
+.site-header[data-hide="true"]{
+  transform:translateY(-100%);
+}
+
+.nav{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 16px;
+}
+
+/* Burger */
+.burger{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  border:0;
+  background:none;
+  padding:8px;
+  cursor:pointer;
+}
+.burger span{
+  width:24px;
+  height:2px;
+  background:#222;
+  transition:.3s;
+}
+.burger.open span:nth-child(1){
+  transform:translateY(7px) rotate(45deg);
+}
+.burger.open span:nth-child(2){opacity:0;}
+.burger.open span:nth-child(3){
+  transform:translateY(-7px) rotate(-45deg);
+}
+
+/* Menú */
+.menu{
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+  list-style:none;
+  padding:16px 0;
+}
+.menu.open{display:flex;}
+
+@media(min-width:768px){
+  .burger{display:none;}
+  .menu{
+    display:flex;
+    flex-direction:row;
+    gap:32px;
+  }
+}

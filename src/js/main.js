@@ -1,3 +1,6 @@
 // src/js/main.js
-console.log("Proyecto Albañil Web – JS listo");
+import './header.js'
+
 // prueba
+console.log("Proyecto Albañil Web – JS listo");
+
