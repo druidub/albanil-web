@@ -24,7 +24,7 @@ a{text-decoration:none;color:inherit}
 }
 
 .nav{
-  position:relative;
+  position:relative;          /* ← NUEVO */
   max-width:1200px;
   margin:0 auto;
   display:flex;
@@ -40,7 +40,7 @@ a{text-decoration:none;color:inherit}
   gap:5px;
   border:0;
   background:none;
-  padding:8px;
+  padding:12px;
   cursor:pointer;
 }
 .burger span{
@@ -59,12 +59,15 @@ a{text-decoration:none;color:inherit}
 
 /* Menú */
 .menu{          /* ← NUEVO */
+  position:absolute;          /* ← NUEVO */
   top:100%;                   /* pega justo debajo del header */
   left:0;width:100%;
   background:#fff;            /* fondo propio */
   border-bottom:1px solid #eee;
+  display:none;flex-direction:column;align-items:center;
   gap:16px;padding:16px 0;
   box-shadow:0 2px 4px #0002;
+  list-style: none;
 }
 .menu.open{display:flex;}
 
