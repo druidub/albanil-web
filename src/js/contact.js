@@ -23,15 +23,18 @@ export function initContactForm(){
   
       if(errores) return
   
-      /* ---- ENVÍO ----
-         // Opción EmailJS:
-         emailjs.send('service_id','template_id',{
-           nombre,email,mensaje
-         }).then(() => showOK())
-  
-         // Por ahora solo simulamos: */
-      console.log({nombre,email,mensaje})
-      showOK()
+      /* ---- ENVÍO real con EmailJS ---- */
+      emailjs.send('service_taeelqb', 'template_bzhhdxi', {
+        name: nombre,
+        email: email,
+        message: mensaje,
+        reply_to : email
+      })
+        .then(() => showOK())
+        .catch(err => {
+          alert('Lo siento, hubo un error al enviar. Intenta de nuevo.');
+          console.error(err);
+  });
     })
   
     function showOK(){
