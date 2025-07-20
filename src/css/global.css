@@ -139,6 +139,36 @@ a{text-decoration:none;color:inherit}
   }
 }
 
+
+/* ——— Hero ——— */
+.hero{
+  position:relative;
+  height:70vh;
+  min-height:420px;
+  overflow:hidden;
+}
+.hero picture,
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero__overlay{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  background:rgba(0,0,0,.55);
+  color:#fff;text-align:center;padding:0 16px
+}
+
+@media(min-width:768px){
+  .hero__overlay p{max-width:40ch;}
+}
+
+.hero__overlay h1{font-size:clamp(1.8rem,5vw,3rem);margin-bottom:.5rem}
+.hero__overlay p{max-width:40ch;margin-bottom:1.5rem}
+.btn-cta{
+  display:inline-block;background:var(--clr-primary);color:#fff;
+  padding:.75rem 1.5rem;border-radius:4px;font-weight:600;
+  transition:background .2s
+}
+.btn-cta:hover{background:#a02121}
+=======
 /* ——— Mini-Portfolio ——— */
 .mini-portfolio{padding:48px 0;background:#fafafa;text-align:center;}
 .mini-portfolio h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:32px;}
@@ -230,5 +260,6 @@ a{text-decoration:none;color:inherit}
 }
 .card-obra img{width:100%;aspect-ratio:4/3;object-fit:cover;}
 .card-obra h2{padding:12px;font-size:1rem}
+
 
 
