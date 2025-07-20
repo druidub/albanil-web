@@ -1,6 +1,10 @@
-// src/js/main.js
 import './header.js'
 
-// prueba
-console.log("Proyecto Albañil Web – JS listo");
+import { initServicesCarousel } from './services.js'
+initServicesCarousel()
 
+import { initContactForm } from './contact.js'
+initContactForm()
+
+import { initPortfolioFilters } from './portfolio.js'
+initPortfolioFilters()

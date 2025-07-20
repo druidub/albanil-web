@@ -3,9 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Albañil en Cañada de Verich – Reformas</title>
+  <meta name="description" content="Reformas, reparaciones y obra nueva en Cañada de Verich y Bajo Aragón. Pide tu presupuesto gratuito hoy mismo." />
+  <title>Albañil en Cañada de Verich – Reformas y obra nueva</title>
   <link rel="stylesheet" href="css/global.css" />
 </head>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Albañil Juan Pérez",
+    "image": "https://tu-dominio.com/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Mayor 12",
+      "addressLocality": "La Cañada de Verich",
+      "addressRegion": "Teruel",
+      "postalCode": "44643",
+      "addressCountry": "ES"
+    },
+    "areaServed": ["La Cañada de Verich","Bajo Aragón","Matarraña"],
+    "url": "https://tu-dominio.com",
+    "telephone": "+34 600 123 456",
+    "geo": {"@type":"GeoCoordinates","latitude":40.837,"longitude":0.069},
+    "openingHours": "Mo-Fr 09:00-18:00"
+  }
+  </script>
+  
 <body>
   <header class="site-header" data-header>
   <nav class="nav">
@@ -27,6 +51,11 @@
   </header>
 
   <main id="content">
+
+
+    <!-- Hero -->
+
+
     <section class="hero">
       <picture>
         <!-- sustitúyelo luego por la foto buena -->
@@ -39,6 +68,66 @@
         <a class="btn-cta" href="/contacto.html">Pide presupuesto</a>
       </div>
     </section>
+
+    <!-- Carrusel Servicios -->
+    
+    <section class="services" id="servicios">
+      <h2 class="visually-hidden">Servicios</h2>
+    
+      <div class="services__track" data-track>
+        <article class="service-card">
+          <svg class="service-card__icon" width="48" height="48">
+            <!-- icono martillo -->
+          </svg>
+          <h3>Reformas</h3>
+        </article>
+    
+        <article class="service-card">
+          <svg class="service-card__icon" width="48" height="48">
+            <!-- icono ladrillo -->
+          </svg>
+          <h3>Reparaciones</h3>
+        </article>
+    
+        <article class="service-card">
+          <svg class="service-card__icon" width="48" height="48">
+            <!-- icono plano -->
+          </svg>
+          <h3>Obra nueva</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mini-Portfolio -->
+    <section class="mini-portfolio" id="ultimos-trabajos">
+      <h2>Últimos trabajos</h2>
+
+      <div class="portfolio-grid">
+        <article class="card-obra">
+          <img src="assets/obra-1.webp" alt="Reforma de cocina rústica" loading="lazy" />
+          <h3>Reforma cocina</h3>
+        </article>
+
+        <article class="card-obra">
+          <img src="assets/obra-2.webp" alt="Reparación de balcón de piedra" loading="lazy" />
+          <h3>Balcón piedra</h3>
+        </article>
+
+        <article class="card-obra">
+          <img src="assets/obra-3.webp" alt="Tabique interior ladrillo visto" loading="lazy" />
+          <h3>Tabique ladrillo</h3>
+        </article>
+
+        <article class="card-obra">
+          <img src="assets/obra-4.webp" alt="Solado de terraza" loading="lazy" />
+          <h3>Solado terraza</h3>
+        </article>
+      </div>
+
+      <a class="btn-secondary" href="/portfolio.html">Ver todas las obras</a>
+</section>
+
+
   </main>
   <!-- Footer -->
   <script type="module" src="js/main.js"></script>

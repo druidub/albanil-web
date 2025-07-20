@@ -3,9 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Albañil en Cañada de Verich – Reformas</title>
+  <title>Contacto y presupuestos – Albañil Cañada de Verich</title>
+  <meta name="description" content="Solicita presupuesto gratuito o consulta tu proyecto de reforma. Respuesta en menos de 24 h.">
   <link rel="stylesheet" href="css/global.css" />
 </head>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Albañil Juan Pérez",
+    "image": "https://tu-dominio.com/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Mayor 12",
+      "addressLocality": "La Cañada de Verich",
+      "addressRegion": "Teruel",
+      "postalCode": "44643",
+      "addressCountry": "ES"
+    },
+    "areaServed": ["La Cañada de Verich","Bajo Aragón","Matarraña"],
+    "url": "https://tu-dominio.com",
+    "telephone": "+34 600 123 456",
+    "geo": {"@type":"GeoCoordinates","latitude":40.837,"longitude":0.069},
+    "openingHours": "Mo-Fr 09:00-18:00"
+  }
+  </script>
+  
 <body>
   <header class="site-header" data-header>
   <nav class="nav">
@@ -29,6 +53,37 @@
   <main id="content">
     <!-- Hero irá aquí -->
   </main>
+  <section class="contact-form">
+    <h1>Contacta con tu albañil de confianza</h1>
+  
+    <form id="form-contacto" novalidate>
+      <label>
+        Nombre completo
+        <input type="text" name="nombre" required minlength="3" />
+        <span class="error" data-error-nombre></span>
+      </label>
+  
+      <label>
+        Email
+        <input type="email" name="email" required />
+        <span class="error" data-error-email></span>
+      </label>
+  
+      <label>
+        Tu mensaje
+        <textarea name="mensaje" rows="5" required></textarea>
+        <span class="error" data-error-mensaje></span>
+      </label>
+  
+      <label class="chk">
+        <input type="checkbox" name="rgpd" required />
+        Acepto la <a href="/privacidad.html">política de privacidad</a>
+      </label>
+  
+      <button type="submit" class="btn-cta">Enviar</button>
+      <p class="form-ok" hidden>¡Mensaje enviado correctamente!</p>
+    </form>
+  </section>
   <!-- Footer -->
   <script type="module" src="js/main.js"></script>
 </body>

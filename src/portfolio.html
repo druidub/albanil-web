@@ -3,9 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Albañil en Cañada de Verich – Reformas</title>
+  <title>Portfolio de reformas – Albañil Cañada de Verich</title>
+  <meta name="description" content="Galería de cocinas, balcones, fachadas y más trabajos realizados en Cañada de Verich y comarcas cercanas.">
   <link rel="stylesheet" href="css/global.css" />
 </head>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Albañil Juan Pérez",
+    "image": "https://tu-dominio.com/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Mayor 12",
+      "addressLocality": "La Cañada de Verich",
+      "addressRegion": "Teruel",
+      "postalCode": "44643",
+      "addressCountry": "ES"
+    },
+    "areaServed": ["La Cañada de Verich","Bajo Aragón","Matarraña"],
+    "url": "https://tu-dominio.com",
+    "telephone": "+34 600 123 456",
+    "geo": {"@type":"GeoCoordinates","latitude":40.837,"longitude":0.069},
+    "openingHours": "Mo-Fr 09:00-18:00"
+  }
+  </script>
+  
 <body>
   <header class="site-header" data-header>
   <nav class="nav">
@@ -26,9 +50,115 @@
    </nav>
   </header>
 
-  <main id="content">
-    <!-- Hero irá aquí -->
+  <main class="portfolio-page">
+    <h1>Portfolio de reformas</h1>
+
+    <!-- Barra de filtros -->
+    <div class="filters" data-filtros>
+      <button class="filter active" data-tag="all">Todo</button>
+      <button class="filter" data-tag="cocina">Cocinas</button>
+      <button class="filter" data-tag="balcon">Balcón</button>
+      <button class="filter" data-tag="terraza">Terrazas</button>
+      <button class="filter" data-tag="fachada">Fachadas</button>
+      <button class="filter" data-tag="banos">Baños</button>
+      <button class="filter" data-tag="comedor">Comedores</button>
+      <button class="filter" data-tag="nueva">Obra nueva</button>
+      <button class="filter" data-tag="piscina">Piscinas</button>
+      <button class="filter" data-tag="otros">Otros</button>
+    </div>
+
+    <!-- Grid de obras -->
+    <section class="portfolio-grid-full" data-grid>
+      <!-- cada tarjeta -->
+      <article class="card-obra" data-tags="cocina">
+        <img src="assets/obra-cocina-1.webp" alt="Reforma de cocina rústica" loading="lazy" />
+        <h2>Reforma cocina rústica</h2>
+      </article>
+
+      <article class="card-obra" data-tags="balcon fachada">
+        <img src="assets/obra-balcon-1.webp" alt="Restauración de balcón de piedra" loading="lazy" />
+        <h2>Restaurar balcón de piedra</h2>
+      </article>
+
+      <article class="card-obra" data-tags="balcon fachada">
+        <img src="assets/obra-balcon-2.webp" alt="Restauración de balcón de piedra" loading="lazy" />
+        <h2>Restaurar balcón</h2>
+      </article>
+
+      <article class="card-obra" data-tags="balcon fachada">
+        <img src="assets/obra-balcon-3.webp" alt="Restauración de balcón de piedra" loading="lazy" />
+        <h2>Restaurar balcón</h2>
+      </article>
+
+      <article class="card-obra" data-tags="banos">
+        <img src="assets/obra-bano-1.webp" alt="Restauración de baño" loading="lazy" />
+        <h2>Restaurar baño</h2>
+      </article>
+
+      <article class="card-obra" data-tags="banos">
+        <img src="assets/obra-bano-2.webp" alt="Restauración de baño" loading="lazy" />
+        <h2>Restaurar baño</h2>
+      </article>
+
+      <article class="card-obra" data-tags="banos">
+        <img src="assets/obra-bano-3.webp" alt="Restauración de baño" loading="lazy" />
+        <h2>Restaurar baño</h2>
+      </article>
+
+      <article class="card-obra" data-tags="cocina">
+        <img src="assets/obra-cocina-2.webp" alt="Restauración de cocina" loading="lazy" />
+        <h2>Restaurar cocina</h2>
+      </article>
+
+      <article class="card-obra" data-tags="cocina">
+        <img src="assets/obra-cocina-3.webp" alt="Restauración de cocina" loading="lazy" />
+        <h2>Restaurar cocina</h2>
+      </article>
+
+      <article class="card-obra" data-tags="cocina comedor">
+        <img src="assets/obra-cocina-comedor-1.webp" alt="Restauración de cocina-comedor" loading="lazy" />
+        <h2>Restaurar cocina comedor</h2>
+      </article>
+
+      <article class="card-obra" data-tags="cocina comedor">
+        <img src="assets/obra-cocina-comedor-2.webp" alt="Restauración de cocina-comedor" loading="lazy" />
+        <h2>Restaurar cocina comedor</h2>
+      </article>
+
+      <article class="card-obra" data-tags="otros">
+        <img src="assets/obra-muro-1.webp" alt="Restauración de muro" loading="lazy" />
+        <h2>Restaurar muro</h2>
+      </article>
+
+      <article class="card-obra" data-tags="nueva">
+        <img src="assets/obra-nueva-formas-organicas.webp" alt="Obra nueva de formas orgánicas" loading="lazy" />
+        <h2>Obra nueva de formas orgánicas</h2>
+      </article>
+
+      <article class="card-obra" data-tags="piscina">
+        <img src="assets/obra-piscina-1.webp" alt="Piscina" loading="lazy" />
+        <h2>Piscina redidencial</h2>
+      </article>
+
+      <article class="card-obra" data-tags="piscina">
+        <img src="assets/obra-piscina-2.webp" alt="Piscina" loading="lazy" />
+        <h2>Piscina chalet</h2>
+      </article>
+
+      <article class="card-obra" data-tags="banos">
+        <img src="assets/obra-bano-4.webp" alt="Restauración de baño" loading="lazy" />
+        <h2>Restaurar baño</h2>
+      </article>
+
+      <article class="card-obra" data-tags="terraza">
+        <img src="assets/obra-terraza-1.webp" alt="Restauración de terraza" loading="lazy" />
+        <h2>Restaurar terraza</h2>
+      </article>
+
+      <!-- …añade tantas obras como tengas… -->
+    </section>
   </main>
+
   <!-- Footer -->
   <script type="module" src="js/main.js"></script>
 </body>
