@@ -76,6 +76,7 @@ a{text-decoration:none;color:inherit}
     position:static;          /* vuelve al flujo normal */
     width:auto;background:none;border:0;box-shadow:none;
     flex-direction:row;gap:32px;padding:0;
+    display:flex;             /* visible en escritorio */
   }
 }
 
