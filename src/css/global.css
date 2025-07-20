@@ -24,6 +24,7 @@ a{text-decoration:none;color:inherit}
 }
 
 .nav{
+  position:relative;
   max-width:1200px;
   margin:0 auto;
   display:flex;
@@ -58,21 +59,23 @@ a{text-decoration:none;color:inherit}
 
 /* Menú */
 .menu{
-  display:none;
-  flex-direction:column;
-  align-items:center;
-  gap:16px;
-  list-style:none;
-  padding:16px 0;
+  position:absolute;          /* ← NUEVO */
+  top:100%;                   /* pega justo debajo del header */
+  left:0;width:100%;
+  background:#fff;            /* fondo propio */
+  border-bottom:1px solid #eee;
+  display:none;flex-direction:column;align-items:center;
+  gap:16px;padding:16px 0;
+  box-shadow:0 2px 4px #0002;
 }
 .menu.open{display:flex;}
 
 @media(min-width:768px){
-  .burger{display:none;}
+  .burger{display:none; padding:12px;}
   .menu{
-    display:flex;
-    flex-direction:row;
-    gap:32px;
+    position:static;          /* vuelve al flujo normal */
+    width:auto;background:none;border:0;box-shadow:none;
+    flex-direction:row;gap:32px;padding:0;
   }
 }
 
