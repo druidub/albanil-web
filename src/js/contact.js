@@ -24,7 +24,9 @@ export function initContactForm(){
       if(errores) return
   
       /* ---- ENVÍO real con EmailJS ---- */
+
       emailjs.send('service_abcdefg', 'template_abcdefg', {
+
         name: nombre,
         email: email,
         message: mensaje,
