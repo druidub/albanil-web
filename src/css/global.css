@@ -171,7 +171,7 @@ a{text-decoration:none;color:inherit}
   transition:background .2s
 }
 .btn-cta:hover{background:#a02121}
-=======
+
 /* ——— Mini-Portfolio ——— */
 .mini-portfolio{padding:48px 0;background:#fafafa;text-align:center;}
 .mini-portfolio h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:32px;}
