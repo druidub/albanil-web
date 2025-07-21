@@ -58,8 +58,8 @@ a{text-decoration:none;color:inherit}
 }
 
 /* Menú */
-.menu{          /* ← NUEVO */
-  position:absolute;          /* ← NUEVO */
+.menu{          
+  position:absolute;          
   top:100%;                   /* pega justo debajo del header */
   left:0;width:100%;
   background:#fff;            /* fondo propio */
@@ -68,6 +68,7 @@ a{text-decoration:none;color:inherit}
   gap:16px;padding:16px 0;
   box-shadow:0 2px 4px #0002;
   list-style: none;
+  min-height:80px;
 }
 .menu.open{display:flex;}
 
