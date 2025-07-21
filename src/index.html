@@ -6,6 +6,9 @@
   <meta name="description" content="Reformas, reparaciones y obra nueva en Cañada de Verich y Bajo Aragón. Pide tu presupuesto gratuito hoy mismo." />
   <title>Albañil en Cañada de Verich – Reformas y obra nueva</title>
   <link rel="stylesheet" href="css/global.css" />
+  <link rel="manifest" href="js/manifest.json" />
+  <meta name="theme-color" content="#c62c2c" />
+  <link rel="icon" href="./assets/logo-albanil-192px.png" type="image/png">
 </head>
 
 <script type="application/ld+json">
@@ -52,7 +55,9 @@
 
   <main id="content">
 
+
     <!-- Hero -->
+
 
     <section class="hero">
       <picture>
@@ -74,23 +79,17 @@
     
       <div class="services__track" data-track>
         <article class="service-card">
-          <svg class="service-card__icon" width="48" height="48">
-            <!-- icono martillo -->
-          </svg>
+          <img src="assets/icono-martillo.svg" alt="" width="96" height="96" />
           <h3>Reformas</h3>
         </article>
     
         <article class="service-card">
-          <svg class="service-card__icon" width="48" height="48">
-            <!-- icono ladrillo -->
-          </svg>
+          <img src="assets/icono-ladrillo.svg" alt="" width="96" height="96" />
           <h3>Reparaciones</h3>
         </article>
     
         <article class="service-card">
-          <svg class="service-card__icon" width="48" height="48">
-            <!-- icono plano -->
-          </svg>
+          <img src="assets/icono-plano.svg" alt="" width="96" height="96" />
           <h3>Obra nueva</h3>
         </article>
       </div>
@@ -123,10 +122,43 @@
       </div>
 
       <a class="btn-secondary" href="/portfolio.html">Ver todas las obras</a>
-</section>
+    </section>
+    
+
 
   </main>
   <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer__inner" itemscope itemtype="https://schema.org/LocalBusiness">
+      <a class="footer__brand" href="/" itemprop="name">
+        Albañil<span>.</span>
+      </a>
+
+      <address class="footer__address">
+        <span itemprop="streetAddress">Calle Mayor 12</span><br>
+        <span itemprop="postalCode">44643</span>
+        <span itemprop="addressLocality">La Cañada de Verich</span>
+        <meta itemprop="addressRegion" content="Teruel">
+      </address>
+
+      <ul class="footer__links">
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/about.html">Sobre mí</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+        <li><a href="/privacidad.html">Privacidad</a></li>
+      </ul>
+
+      <p class="footer__contact">
+        <a href="tel:+34600123456" itemprop="telephone">+34 600 123 456</a><br>
+        <a href="mailto:info@tu-dominio.com" itemprop="email">info@tu-dominio.com</a>
+      </p>
+
+      <p class="footer__copy">
+        © <span id="yearCopy"></span> Juan Pérez. Todos los derechos reservados.
+      </p>
+    </div>
+</footer>
+
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
