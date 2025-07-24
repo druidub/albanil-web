@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: druidub/albanil-web
+  branch: dev
+  auth_type: implicit          # GitHub OAuth implícito
+  app_id: YOUR_GH_CLIENT_ID
+
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "obras"
+    label: "Obras"
+    folder: "src/data/obras"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {name: "title",  label: "Título"}
+      - {name: "tags",   label: "Etiquetas", widget: "list"}
+      - {name: "image",  label: "Foto", widget: "image"}
+      - {name: "body",   label: "Descripción", widget: "markdown", required: false}
