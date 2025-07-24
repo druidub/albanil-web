@@ -3,7 +3,7 @@ backend:
   repo: druidub/albanil-web
   branch: dev
   auth_type: implicit          # GitHub OAuth implícito
-  app_id: YOUR_GH_CLIENT_ID
+  app_id: RQfJMQwMp8UAjk7hiazGTG5fEUVehvKP
 
 
 media_folder: "src/assets/uploads"

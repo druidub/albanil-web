@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/admin/*"
+  to   = "/admin/index.html"
+  status = 200
+  force = true
+  conditions = { Role = ["authenticated"] }   # Netlify Edge Auth
