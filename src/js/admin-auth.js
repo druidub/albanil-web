@@ -1,7 +1,3 @@
-// src/js/admin-auth.js
-console.log(">> admin-auth.js DOMAIN =", import.meta.env.VITE_AUTH0_DOMAIN);
-console.table(import.meta.env);
-
 /* 1 · importación por defecto  */
 import { createAuth0Client } from "@auth0/auth0-spa-js";
 

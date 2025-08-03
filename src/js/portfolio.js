@@ -1,3 +1,17 @@
+/* ───────────────── filtros dinámicos ───────────────── */
+export async function renderFilters(filtrosSel){
+  const res   = await fetch("/data/portfolio.json");
+  const obras = await res.json();
+  const todas = new Set(obras.flatMap(o => o.tags));
+
+  const html =
+    `<button class="filter active" data-tag="all">Todo</button>` +
+    [...todas].sort().map(tag =>
+      `<button class="filter" data-tag="${tag}">${tag}</button>`).join("");
+
+  document.querySelector(filtrosSel).innerHTML = html;
+}
+
 /* ───────────────── render dinámico ───────────────── */
 export async function renderPortfolio(gridSel){
   const res   = await fetch("/data/portfolio.json");

@@ -9,11 +9,6 @@ initContactForm()
 import { initPortfolioFilters } from './portfolio.js'
 initPortfolioFilters()
 
-import { renderPortfolio, initPortfolioFilters } from "./portfolio.js";
-
-await renderPortfolio("[data-grid]");  // 1. crea las tarjetas
-initPortfolioFilters();                // 2. ahora los filtros ya encuentran cards
-
 
 
 if ('serviceWorker' in navigator) {
