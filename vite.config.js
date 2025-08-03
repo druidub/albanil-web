@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src",          // ← aquí viven tus HTML, CSS, JS
+  envDir: "./",
   build: {
     outDir: "../dist",  // resultará en /dist
     emptyOutDir: true
