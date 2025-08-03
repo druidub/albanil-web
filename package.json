@@ -100,14 +100,19 @@
   },
   "devDependencies": {
     "eslint": "^8.57.1",
+
     "gray-matter": "^4.0.3",
+
     "prettier": "^3.6.2",
     "vite": "^7.0.6"
   },
   "scripts": {
     "dev": "vite src",
+
     "build": "vite build && node scripts/build-portfolio.js"
+
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/druidub/albanil-web.git"

@@ -1,3 +1,4 @@
+
 /* ───────────────── filtros dinámicos ───────────────── */
 export async function renderFilters(filtrosSel){
   const res   = await fetch("/data/portfolio.json");
