@@ -105,7 +105,7 @@
   },
   "scripts": {
     "dev": "vite src",
-    "build": "vite build"
+    "build": "vite build && node scripts/build-portfolio.js"
   },
 
   "repository": {

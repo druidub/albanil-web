@@ -1,22 +1,47 @@
 backend:
-  name: github
+  name: github           # sigues usando el login GitHub+Auth0
   repo: druidub/albanil-web
-  branch: dev
-  auth_type: implicit          # GitHub OAuth implícito
-  app_id: RQfJMQwMp8UAjk7hiazGTG5fEUVehvKP
+  branch: dev            # las ediciones van a dev
 
-
-media_folder: "src/assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "src/assets/uploads"     # adonde va la imagen
+public_folder: "/assets/uploads"       # cómo la web la referenciará
 
 collections:
-  - name: "obras"
-    label: "Obras"
+
+  # 1 ──────────────── Lista de etiquetas ────────────────
+  - name: etiquetas
+    label: Etiquetas
+    delete: false
+    editor:
+      preview: false                 # no hace falta preview
+    files:
+      - file: "src/data/etiquetas.json"
+        label: Lista de etiquetas
+        name: etiquetas
+        fields:
+          - label: Etiquetas
+            name: etiquetas
+            widget: list
+            summary: "{{fields.etiquetas}}"   # muestra la lista en el resumen
+
+  # 2 ──────────────── Obras realizadas ──────────────────
+  - name: obras
+    label: Obras
+    label_singular: Obra
     folder: "src/data/obras"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}"                  # archivo = titulo-sin-espacios.md
+    summary: "{{title}} — {{tags}}"   # cómo aparece en el listado del CMS
     fields:
-      - {name: "title",  label: "Título"}
-      - {name: "tags",   label: "Etiquetas", widget: "list"}
-      - {name: "image",  label: "Foto", widget: "image"}
-      - {name: "body",   label: "Descripción", widget: "markdown", required: false}
+      - { name: title,  label: Título }
+      - { name: image,  label: Foto,  widget: image }
+      - { name: date,   label: Fecha, widget: datetime, format: "YYYY-MM-DD" }
+      - label: Etiquetas
+        name: tags
+        widget: relation              # toma opciones de la lista maestra
+        collection: etiquetas
+        value_field: "etiquetas.*"
+        search_fields: ["etiquetas.*"]
+        display_fields: ["etiquetas.*"]
+        multiple: true
+      - { name: body,   label: Descripción, widget: markdown, required: false }
